@@ -14,7 +14,7 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <compiler.source>1.6</compiler.source>
     <compiler.target>1.6</compiler.target>
-    <cuke4duke.version>0.3.0</cuke4duke.version>
+    <cuke4duke.version>0.4.4</cuke4duke.version>
   </properties>
 
   <build>
@@ -104,7 +104,7 @@
             <cucumberArg>${basedir}/target/test-classes</cucumberArg>
           </cucumberArgs>
           <gems>
-            <gem>install cuke4duke --version ${cuke4duke.version}</gem>
+            <gem>install cuke4duke --version 0.4.2</gem>
           </gems>
         </configuration>
         <executions>
