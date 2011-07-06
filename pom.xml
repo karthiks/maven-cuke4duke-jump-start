@@ -214,27 +214,9 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.seleniumhq.webdriver</groupId>
-      <artifactId>webdriver-htmlunit</artifactId>
-      <version>0.9.7376</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.seleniumhq.webdriver</groupId>
-      <artifactId>webdriver-firefox</artifactId>
-      <version>0.9.7376</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.seleniumhq.webdriver</groupId>
-      <artifactId>webdriver-ie</artifactId>
-      <version>0.9.7376</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.seleniumhq.webdriver</groupId>
-      <artifactId>webdriver-support</artifactId>
-      <version>0.9.7376</version>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-java</artifactId>
+      <version>2.0rc3</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -267,24 +249,40 @@
     <profile>
       <id>firefox</id>
       <properties>
+	<database.driver>org.hsqldb.jdbcDriver</database.driver>
+        <database.url>jdbc:hsqldb:file:target/dbms/my-webapp-db</database.url>
+        <database.username>sa</database.username>
+        <database.password></database.password>
         <webdriver.impl.class>org.openqa.selenium.firefox.FirefoxDriver</webdriver.impl.class>
       </properties>
     </profile>
     <profile>
       <id>htmlunit</id>
       <properties>
+	<database.driver>org.hsqldb.jdbcDriver</database.driver>
+        <database.url>jdbc:hsqldb:file:target/dbms/my-webapp-db</database.url>
+        <database.username>sa</database.username>
+        <database.password></database.password>
         <webdriver.impl.class>org.openqa.selenium.htmlunit.HtmlUnitDriver</webdriver.impl.class>
       </properties>
     </profile>
     <profile>
       <id>chrome</id>
       <properties>
+	<database.driver>org.hsqldb.jdbcDriver</database.driver>
+        <database.url>jdbc:hsqldb:file:target/dbms/my-webapp-db</database.url>
+        <database.username>sa</database.username>
+        <database.password></database.password>
         <webdriver.impl.class>org.openqa.selenium.chrome.ChromeDriver</webdriver.impl.class>
       </properties>
     </profile>
     <profile>
       <id>ie</id>
       <properties>
+	<database.driver>org.hsqldb.jdbcDriver</database.driver>
+        <database.url>jdbc:hsqldb:file:target/dbms/my-webapp-db</database.url>
+        <database.username>sa</database.username>
+        <database.password></database.password>
         <webdriver.impl.class>org.openqa.selenium.ie.InternetExplorerDriver</webdriver.impl.class>
       </properties>
     </profile>
