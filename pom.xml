@@ -105,7 +105,7 @@
             <cucumberArg>${basedir}/target/test-classes</cucumberArg>
           </cucumberArgs>
           <gems>
-            <gem>install cuke4duke --version 0.4.2</gem>
+            <gem>install cuke4duke --version ${cuke4duke.version}</gem>
           </gems>
         </configuration>
         <executions>
